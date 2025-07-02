@@ -1,12 +1,39 @@
-# React + Vite
+# React Practice Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of beginner-friendly React components and mini projects built to practice core concepts like state, event handling, conditional rendering, and effects.
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a personal learning playground for exploring React fundamentals. Each component is built as a standalone practice task and organized within its own file.
 
-## Expanding the ESLint configuration
+### ✅ Completed Tasks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Light/Dark Mode Toggle
+- [x] Show/Hide Password Toggle
+- [x] Counter App
+
+### 🧩 Upcoming Tasks
+
+- [ ] Tabs Switcher
+- [ ] Accordion
+- [ ] Color Picker
+- [ ] Basic Form Handling
+- [ ] Local To-Do List
+- [ ] Image Preview Gallery
+- [ ] Basic Timer
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- Vite (for fast dev environment)
+- CSS Modules / Global CSS (depending on component)
+- TanStack Query (optional for advanced data fetching later)
+
+## 📁 How to Run
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
