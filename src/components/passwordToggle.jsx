@@ -14,7 +14,7 @@ function PasswordToggle () {
         type={showPassword ? 'text' : 'password'}
         placeholder="Input password"
         /> <br />
-        <button onClick={toggleMenu}>Password {showPassword ? 'Visible' : 'Hidden'}</button>
+        <button className="pt-button" onClick={toggleMenu}>Password {showPassword ? 'Visible' : 'Hidden'}</button>
         </div>
         </>
     )

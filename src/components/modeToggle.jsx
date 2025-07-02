@@ -1,5 +1,5 @@
 import { useState } from "react"; 
-import './index.css';
+import '../styles/mt.css';
 
 function App () {
   const [isDarkMode, setIsDarkMode]= useState(false);
