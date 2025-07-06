@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  color: hsl(215, 28%, 17%);
 }
 
 button {
