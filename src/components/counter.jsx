@@ -31,9 +31,9 @@ function Counter () {
         <h2>{counter}</h2>
         </div>
         <div className="button">
-        <button className="counter-button" onClick={handleIncrease}>Increase</button>
-        <button className="counter-button" onClick={handleReset}>Reset</button>
         <button className="counter-button" onClick={handleDecrease}>Decrease</button>
+        <button className="counter-button" onClick={handleReset}>Reset</button>
+        <button className="counter-button" onClick={handleIncrease}>Increase</button>
         </div> 
         </div>
         

@@ -9,7 +9,7 @@ function Accordion () {
     return(
         <>
         <section>
-            <p>What is React?</p>
+            <p>What is React?</p><br />
             {isOpen && <p>React is a JavaScript library for building UIs...</p>}
             <button
             className="accordion-button" 

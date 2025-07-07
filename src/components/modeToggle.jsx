@@ -8,9 +8,10 @@ function App () {
   }
 
   return(
-    <div className={isDarkMode ? 'dark' : 'light'}>
-      <h1>{isDarkMode ? 'Dark Mode 🌚' : 'Light Mode ☀️'}</h1>
-        <button onClick={toggleMode}>
+    <div className={`${isDarkMode ? 'dark' : 'light'} mt-container`}>
+      <h1 className="mt-content">{isDarkMode ? 'Dark Mode 🌚' : 'Light Mode ☀️'}</h1>
+        <button onClick={toggleMode}
+        className="mt-button">
           Switch to {isDarkMode ? 'Light' : 'Dark'} Mode
         </button>
       
