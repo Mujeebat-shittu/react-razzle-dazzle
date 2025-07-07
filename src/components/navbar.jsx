@@ -19,7 +19,8 @@ const NavBar = function () {
 
         <div className="links"
         style={{
-            display: dropDown ? 'flex' : 'none'        }}>
+            display: dropDown ? 'flex' : 'none'
+             }}>
         <Link to="/accordion">Accordion</Link>
         <Link to="/colourPicker">Colour Picker</Link>
         <Link to="/counter">Counter</Link>
@@ -27,7 +28,7 @@ const NavBar = function () {
         <Link to="/modeToggle">Mode Toggle</Link>
         <Link to="/passwordToggle">Password Toggle</Link>
         <Link to="/quote">Quote</Link>
-        <Link to="/tabs">Tab</Link>
+        <Link to="/tabs">Tab Switcher</Link>
         </div>
 
         
