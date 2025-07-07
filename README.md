@@ -11,15 +11,14 @@ This project is a personal learning playground for exploring React fundamentals.
 - [x] Light/Dark Mode Toggle
 - [x] Show/Hide Password Toggle
 - [x] Counter App
+- [x] Tabs Switcher
+- [x] Accordion
+- [x] Color Picker
+- [x] Frequently Asked Questions Toggle
+- [x] Random Quote Picker
 
 ### 🧩 Upcoming Tasks
-
-- [ ] Tabs Switcher
-- [ ] Accordion
-- [ ] Color Picker
-- [ ] Basic Form Handling
-- [ ] Local To-Do List
-- [ ] Image Preview Gallery
+- [ ] Form Input & Validation
 - [ ] Basic Timer
 
 ## 🛠️ Tech Stack
@@ -27,7 +26,7 @@ This project is a personal learning playground for exploring React fundamentals.
 - [React](https://reactjs.org/)
 - Vite (for fast dev environment)
 - CSS Modules / Global CSS (depending on component)
-- TanStack Query (optional for advanced data fetching later)
+- React Router (for navigatin)
 
 ## 📁 How to Run
 
