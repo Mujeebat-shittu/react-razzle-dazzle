@@ -32,6 +32,10 @@
   margin: 1rem auto;
 }
 
+.mt-button:hover{
+  cursor: pointer;
+}
+
 .mt-container{
   margin: 1rem auto;
   display: flex;

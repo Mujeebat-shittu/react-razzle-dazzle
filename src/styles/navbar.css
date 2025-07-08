@@ -7,6 +7,11 @@
     display: flex ;
 }
 
+.menuIcon:hover{
+    cursor: pointer;
+}
+
+
 .links{
     padding: 1rem;
     display: flex;
