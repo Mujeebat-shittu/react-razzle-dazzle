@@ -6,6 +6,7 @@
     margin :1rem auto
 }
 
+
 .cp-button {
     width: auto;
     height: auto;
@@ -22,5 +23,18 @@
     justify-content: space-evenly;
     padding: 0.2rem;
     margin: 1rem auto;
+
+}
+
+@media (max-width: 610px){
+    .cp-container{
+        max-width: 350px;
+    }
+    .class{
+        display: grid;
+        grid-template-columns: minmax(100px, 1fr);
+        margin: 0.7rem auto;
+        padding: 0.3rem 0.8rem; 
+    }
 
 }

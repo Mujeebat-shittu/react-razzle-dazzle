@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/faq.css'
 
 function FAQ () {
     const [openIndexes, setOpenIndexes] = useState([]);
@@ -65,22 +66,23 @@ setOpenIndexes(prev => {
 
     return (
         <>
-        <div
-        style={{
-            margin: '1rem auto',
-            padding: '0.8rem 3rem'
-        }}>
+        <div 
+        className="faq-container">    
         {faqs.map ((faq, index) => (
-            <div key={index}>
+            <div
+            className="faq-content"
+             key={index}>
                 <h3
                 style={{
-                   color: 'hsl (0, 0%, 50)'
+                   color: 'hsl (0, 0%, 50)',
+                   padding: '0.5rem'
                 }}>{faq.question}</h3>
                     {openIndexes.includes(index) && 
                     <p
                     style={{
                          color: 'hsl(0, 0%, 100%)',
-                         fontSize: '14px'
+                         fontSize: '14px',
+                         padding: '0.57rem'
                     }}>{faq.answer}</p>}
     
                 <button 
@@ -88,7 +90,7 @@ setOpenIndexes(prev => {
                 style={{
                     borderRadius: '4px',
                     border: 'none',
-                    marginTop: '0',
+                    marginTop: '0.8rem',
                     color: 'hsl(215, 18%, 15%)',
                     backgroundColor: 'white',
                     cursor: 'pointer',

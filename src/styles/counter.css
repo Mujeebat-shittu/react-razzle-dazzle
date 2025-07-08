@@ -45,3 +45,19 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 610px){
+    .container{
+        max-width: 350px;
+    }
+
+    .counter-button{
+        width: auto;
+        height: auto;
+        margin: 0.5rem 1rem;
+        padding: 0.7rem 1.1rem;
+        font-size: 0.95rem;
+
+
+    }
+}
