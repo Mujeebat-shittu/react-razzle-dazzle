@@ -23,9 +23,10 @@
     
 }
 
+
 nav a {
-  text-decoration: none;
-  color: hsl(0, 10%, 50%); 
+    text-decoration: none;
+    color: hsl(0, 20%, 93%);
 }
 
 
@@ -41,21 +42,25 @@ nav a {
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        background-color: hsl(0, 20%, 93%);
+        background-color: hsl(0, 0%, 93%);
         overflow: hidden;
         height: 500px;
     }
-
+    
     .menuIcon{
         display: flex;
     }
-
+    
     .menuIcon i {
         display: block;
         position: fixed;
         top: 3rem;
         right: 3rem;
 
+    }
+    
+    nav a {
+          color: hsl(0, 10%, 50%); 
     }
 
 }
