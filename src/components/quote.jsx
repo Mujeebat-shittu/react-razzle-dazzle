@@ -1,7 +1,23 @@
 import { useState } from "react";
-import '../styles/quote.css'
+import { useNavigate } from "react-router-dom";
+import { ChevronLeftIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
+import { Home } from "lucide-react";
+
 
 function Quote () {
+  const navigate = useNavigate();
+    const handlenext = function () {
+      navigate("/tabs");
+    };
+
+    const handleback = function () {
+      navigate("/passwordToggle");
+    };
+
+    const handlehome = function (){
+    navigate("/")
+  }
 
     const [openQuote, setOpenQuote] = useState (false);
 
@@ -69,20 +85,44 @@ const pickQuote = function () {
     return (
         <>
         <div
-        className="quote-container">
+        className="flex flex-col items-center justify-center">
 
         {openQuote && (
-        <div className="quote-content"
+        <div className="flex flex-col items-center justify-center max-w-[70vw] p-2"
         >
-             <blockquote>{openQuote.text}</blockquote>
-            <cite>{openQuote.author}</cite>         
+             <blockquote className="text-center p-2">{openQuote.text}</blockquote>
+            <cite className="p-2">{openQuote.author}</cite>         
         </div>
         )}
         <button
         onClick={pickQuote}
-        className="quote-button"
+        className="py-4 px-3 rounded-sm border-none bg-[hsl(0,0%,40%)] text-[hsl(0,0%,70%)]"
         >Pick a Random Quote</button>
         </div> 
+
+        <div className="gap-8 flex items-center justify-center mt-2 p-4">
+        <ChevronLeftIcon
+          size={30}
+          strokeWidth={4}
+          onClick={handleback}
+          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,40%)] px-1"
+        />
+
+        <Home
+        size={30}
+        strokeWidth={4}
+        onClick={handlehome}
+        className="cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,40%)] px-1"
+        />
+
+        <ChevronRightIcon
+          size={30}
+          strokeWidth={4}
+          onClick={handlenext}
+          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,40%)] px-1"
+        />
+      </div>
+
 
         </>
     

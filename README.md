@@ -2,7 +2,7 @@
 
 A collection of beginner-friendly React components and mini projects built to practice core concepts like state, event handling, conditional rendering, and effects.
 
-## 🚀 Overview
+##  Overview
 
 This project is a personal learning playground for exploring React fundamentals. Each component is built as a standalone practice task and organized within its own file.
 

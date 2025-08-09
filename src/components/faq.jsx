@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
-import '../styles/faq.css'
+import { useNavigate } from "react-router-dom";
+import { ChevronLeftIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
+import { Home } from "lucide-react";
+
 
 function FAQ () {
     const [openIndexes, setOpenIndexes] = useState([]);
@@ -64,42 +68,39 @@ setOpenIndexes(prev => {
 });
 }
 
+const navigate = useNavigate();
+    const handlenext = function () {
+      navigate("/modeToggle");
+    };
+
+    const handleback = function () {
+      navigate("/counter");
+    };
+
+    const handlehome = function (){
+    navigate("/")
+  }
+
     return (
         <>
         <div 
-        className="faq-container">    
+        className="py-3.5 px-12 my-4 mx-auto ">    
         {faqs.map ((faq, index) => (
             <div
-            className="faq-content"
+            className="p-4"
              key={index}>
                 <h3
-                style={{
-                   color: 'hsl (0, 0%, 50)',
-                   padding: '0.5rem'
-                }}>{faq.question}</h3>
+                className="p-2]"
+                >{faq.question}</h3>
                     {openIndexes.includes(index) && 
                     <p
-                    style={{
-                         color: 'hsl(0, 0%, 100%)',
-                         fontSize: '14px',
-                         padding: '0.57rem'
-                    }}>{faq.answer}</p>}
+                    className="text-[hsl(0,0%,100%)] text-xl p-[0.57rem]"
+                    >{faq.answer}</p>}
     
                 <button 
                 onClick={ () => toggleOption (index)}
-                style={{
-                    borderRadius: '4px',
-                    border: 'none',
-                    marginTop: '0.8rem',
-                    color: 'hsl(215, 18%, 15%)',
-                    backgroundColor: 'white',
-                    cursor: 'pointer',
-                    fontWeight:'600'
-
-
-
-
-                }}>
+                className="rounded-sm border-none mt-[0.8rem] text-[hsl(0,0%,70%)] cursor-pointer font-semibold] bg-[hsl(0,0%,40%)] px-4 py-2"
+                >
                     {openIndexes.includes(index) ? 'Hide answer' :'Show answer'}
                  </button>
             </div>
@@ -109,6 +110,29 @@ setOpenIndexes(prev => {
     
         
     </div>
+
+    <div className="gap-8 flex items-center justify-center mt-2 p-4">
+        <ChevronLeftIcon
+          size={30}
+          strokeWidth={4}
+          onClick={handleback}
+          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+        />
+
+        <Home
+        size={30}
+        strokeWidth={4}
+        onClick={handlehome}
+        className="cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+        />
+
+        <ChevronRightIcon
+          size={30}
+          strokeWidth={4}
+          onClick={handlenext}
+          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+        />
+      </div>
        </>
 
     )

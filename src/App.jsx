@@ -17,15 +17,15 @@ function App () {
 
       
     <Routes>
-      <Route path='/' element={<NavBar/>}></Route>
-      <Route path='/passwordToggle' element={<Password/>}></Route>
-      <Route path='/counter' element={<Counter/>}></Route>
-      <Route path='/colourPicker' element={<ColourPicker/>}></Route>
-      <Route path='/tabs' element={<Tab/>}></Route>
-      <Route path='/modeToggle' element={<Theme/>}></Route>
-      <Route path='/accordion' element={<Accordion/>}></Route>
-      <Route path='/faq' element={<FAQ/>}></Route>
-      <Route path='/quote' element={<Quote/>}></Route>
+      <Route path='/' element={<NavBar/>}/>
+      <Route path='/passwordToggle' element={<Password/>}/>
+      <Route path='/counter' element={<Counter/>}/>
+      <Route path='/colourPicker' element={<ColourPicker/>}/>
+      <Route path='/tabs' element={<Tab/>}/>
+      <Route path='/modeToggle' element={<Theme/>}/>
+      <Route path='/accordion' element={<Accordion/>}/>
+      <Route path='/faq' element={<FAQ/>}/>
+      <Route path='/quote' element={<Quote/>}/>
 
     </Routes>
  
