@@ -22,7 +22,7 @@ function Counter() {
       "linear-gradient(25deg, #f181aa, #d36c76 50%)";
 
     return () => {
-      document.body.style.background = ""; // optional: resets when leaving component
+      document.body.style.background = "";
     };
   }, []);
 
@@ -43,7 +43,7 @@ function Counter() {
     <>
       <div className=" bg-[#eee9e9] sm:max-w-[350px] rounded-4xl my-8 mx-auto p-8 flex flex-col items-center justify-center shadow-sm ">
         <div className="flex items-center justify-center">
-          <h2 className="text-xl my-4 mx-auto p-4 text-[hsl(0,10%,50%)]">
+          <h2 className="text-2xl my-4 mx-auto p-4 text-[#d36c76]">
             {counter}
           </h2>
         </div>

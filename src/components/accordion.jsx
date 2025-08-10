@@ -25,11 +25,15 @@ function Accordion() {
   return (
     <>
       <section className="flex flex-col items-center justify-center">
-        <p>What is React?</p>
+        <p className="text-xl">What is React?</p>
         <br />
-        {isOpen && <p>React is a JavaScript library for building UIs...</p>}
+        {isOpen && (
+          <p className="my-2 text-lg">
+            React is a JavaScript library for building UIs...
+          </p>
+        )}
         <button
-          className="py-4 px-6 rounded border-none bg-[hsl(0,0%,40%)] text-[hsl(0,0%,72%)] mx-auto mt-2 mb-2 text-[12px] flex cursor-pointer hover:bg-[#333333] transition-colors duration-200"
+          className="py-4 px-6 rounded border-none bg-[hsl(0,0%,40%)] text-[hsl(0,0%,72%)] mx-auto mt-4 mb-2 text-[12px] flex cursor-pointer hover:bg-[hsl(0,0%,35%)] transition-colors duration-200"
           onClick={toggleOption}
         >
           {isOpen ? "Hide answer" : "Show answer"}
@@ -40,14 +44,14 @@ function Accordion() {
             size={30}
             strokeWidth={4}
             onClick={handleback}
-            className=" my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)]"
+            className=" my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,35%)]"
           />
 
           <Home
             size={30}
             strokeWidth={4}
             onClick={handlehome}
-            className="my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+            className="my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,35%)] px-1"
           />
 
           <ChevronRightIcon
