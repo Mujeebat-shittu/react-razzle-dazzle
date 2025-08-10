@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeftIcon } from "lucide-react";
 import { ChevronRightIcon } from "lucide-react";
+import { Home } from "lucide-react";
 
 function Accordion() {
   const [isOpen, setIsOPen] = useState(false);
@@ -15,6 +16,10 @@ function Accordion() {
   };
 
   const handleback = function () {
+    navigate("/");
+  };
+
+  const handlehome = function () {
     navigate("/");
   };
   return (
@@ -37,6 +42,14 @@ function Accordion() {
             onClick={handleback}
             className=" my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)]"
           />
+
+          <Home
+            size={30}
+            strokeWidth={4}
+            onClick={handlehome}
+            className="my-4 cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+          />
+
           <ChevronRightIcon
             size={30}
             strokeWidth={4}

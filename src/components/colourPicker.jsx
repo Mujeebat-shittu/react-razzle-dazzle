@@ -14,10 +14,9 @@ function ColourPicker() {
     navigate("/accordion");
   };
 
-  const handlehome = function (){
-    navigate("/")
+  const handlehome = function () {
+    navigate("/");
   };
-
 
   const [colour, setColour] = useState("white");
   const colours = [
@@ -38,7 +37,10 @@ function ColourPicker() {
       ></div>
 
       {colours.map((colour) => (
-        <div className="inline-flex sm:grid sm:grid-cols-[minmax(100px, 1fr)] sm:my-3 sm:mx-auto sm:px-3.5 sm:py-[0.3rem]  items-center justify-evenly p-0.5 my-4 mx-auto" key={colour}>
+        <div
+          className="inline-flex sm:grid sm:grid-cols-[minmax(100px, 1fr)] sm:my-3 sm:mx-auto sm:px-3.5 sm:py-[0.3rem]  items-center justify-evenly p-0.5 my-4 mx-auto"
+          key={colour}
+        >
           <button
             className="text-[hsl(0,0%,20%)] w-auto h-auto m-1.5 border-none cursor-pointer rounded-md px-8 py-3"
             key={colour}
@@ -57,21 +59,21 @@ function ColourPicker() {
           size={30}
           strokeWidth={4}
           onClick={handleback}
-          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+          className=" cursor-pointer bg-[hsl(0,10%,70%)] hover:bg-[hsl(10,0%,50%)] px-1"
         />
 
         <Home
-        size={30}
-        strokeWidth={4}
-        onClick={handlehome}
-        className="cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+          size={30}
+          strokeWidth={4}
+          onClick={handlehome}
+          className="cursor-pointer bg-[hsl(0,10%,70%)] hover:bg-[hsl(10,0%,50%)] px-1"
         />
 
         <ChevronRightIcon
           size={30}
           strokeWidth={4}
           onClick={handlenext}
-          className=" cursor-pointer bg-[hsl(0,0%,40%)] hover:bg-[hsl(0,0%,20%)] px-1"
+          className=" cursor-pointer bg-[hsl(0,10%,70%)] hover:bg-[hsl(10,0%,50%)] px-1"
         />
       </div>
     </>

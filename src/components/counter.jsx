@@ -26,38 +26,48 @@ function Counter() {
     };
   }, []);
 
-   const navigate = useNavigate();
-    const handlenext = function () {
-      navigate("/faq");
-    };
+  const navigate = useNavigate();
+  const handlenext = function () {
+    navigate("/faq");
+  };
 
-    const handleback = function () {
-      navigate("/colourPicker");
-    };
+  const handleback = function () {
+    navigate("/colourPicker");
+  };
 
-    const handlehome = function (){
-    navigate("/")
-  }
+  const handlehome = function () {
+    navigate("/");
+  };
 
   return (
     <>
       <div className=" bg-[#eee9e9] sm:max-w-[350px] rounded-4xl my-8 mx-auto p-8 flex flex-col items-center justify-center shadow-sm ">
         <div className="flex items-center justify-center">
-          <h2 className="text-xl my-4 mx-auto p-4 text-[hsl(0,10%,50%)]">{counter}</h2>
+          <h2 className="text-xl my-4 mx-auto p-4 text-[hsl(0,10%,50%)]">
+            {counter}
+          </h2>
         </div>
         <div className="flex items-center justify-center">
-          <button className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg" onClick={handleDecrease}>
+          <button
+            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            onClick={handleDecrease}
+          >
             Decrease
           </button>
-          <button className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg" onClick={handleReset}>
+          <button
+            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            onClick={handleReset}
+          >
             Reset
           </button>
-          <button className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg" onClick={handleIncrease}>
+          <button
+            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            onClick={handleIncrease}
+          >
             Increase
           </button>
         </div>
       </div>
-
 
       <div className="gap-8 flex items-center justify-center mt-2 p-4">
         <ChevronLeftIcon
@@ -69,11 +79,11 @@ function Counter() {
         />
 
         <Home
-        size={30}
-        color="#d36c76"
-        strokeWidth={4}
-        onClick={handlehome}
-        className="cursor-pointer bg-[#eee9e9] hover:bg-[hsl(0,0%,40%)] px-1"
+          size={30}
+          color="#d36c76"
+          strokeWidth={4}
+          onClick={handlehome}
+          className="cursor-pointer bg-[#eee9e9] hover:bg-[hsl(0,0%,40%)] px-1"
         />
 
         <ChevronRightIcon
@@ -84,10 +94,6 @@ function Counter() {
           className=" cursor-pointer bg-[#eee9e9] hover:bg-[hsl(0,0%,40%)] px-1"
         />
       </div>
-
-
-
-      
     </>
   );
 }
