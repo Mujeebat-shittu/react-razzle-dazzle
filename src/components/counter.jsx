@@ -41,7 +41,7 @@ function Counter() {
 
   return (
     <>
-      <div className=" bg-[#eee9e9] sm:max-w-[350px] rounded-4xl my-8 mx-auto p-8 flex flex-col items-center justify-center shadow-sm ">
+      <div className=" bg-[#eee9e9] w-auto md:w-[450px] rounded-4xl my-8 mx-auto p-8 flex flex-col items-center justify-center shadow-sm ">
         <div className="flex items-center justify-center">
           <h2 className="text-2xl my-4 mx-auto p-4 text-[#d36c76]">
             {counter}
@@ -49,19 +49,19 @@ function Counter() {
         </div>
         <div className="flex items-center justify-center">
           <button
-            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            className="w-auto h-auto my-2 mx-4 py-[0.4rem] px-[1.1rem] md:px-8 text-[0.9rem] md:text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-base md:text-lg"
             onClick={handleDecrease}
           >
             Decrease
           </button>
           <button
-            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            className="w-auto h-auto my-2 mx-4 py-[0.4rem] px-[1.1rem] md:px-8 text-[0.9rem] md:text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-base md:text-lg"
             onClick={handleReset}
           >
             Reset
           </button>
           <button
-            className="sm:w-auto sm:h-auto my-2 mx-4 sm:py-[0.6rem] sm:px-[1.1rem] px-8 sm:text-[0.95rem] text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
+            className="w-auto h-auto my-2 mx-4 py-[0.4rem] px-[1.1rem] md:px-8 text-[0.9rem] md:text-[1rem] bg-[#d46e78] rounded-md border-none text-[#fff] text-lg"
             onClick={handleIncrease}
           >
             Increase

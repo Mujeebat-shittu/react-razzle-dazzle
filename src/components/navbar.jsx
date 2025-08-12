@@ -9,11 +9,11 @@ const NavBar = function () {
   };
   return (
     <>
-      <nav className="no-underline text-[hsl(0,20%,93%)] sm:text-[hsl(0,10%,50%)]">
+      <nav className="no-underline text-[hsl(0,10%,50%)]">
         <div className="relative group flex cursor-pointer ">
           <MenuIcon
             size={40}
-            className="md:static md:mx-auto fixed top-4 right-8 flex items-center justify-center text-white text-[2rem]"
+            className="static mx-auto my-44 top-4 right-8 flex items-center justify-center text-white text-[2rem]"
             onClick={toggleMenu}
           />
 

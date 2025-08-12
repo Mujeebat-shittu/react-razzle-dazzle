@@ -38,7 +38,7 @@ function ColourPicker() {
 
       {colours.map((colour) => (
         <div
-          className="inline-flex sm:grid sm:grid-cols-[minmax(100px, 1fr)] my-3 sm:px-3.5 sm:py-[0.3rem] items-center justify-evenly p-0.5 md:my-4 mx-auto"
+          className=" grid grid-cols-[minmax(100px, 1fr)] my-3 px-3.5 py-[0.3rem] items-center justify-evenly md:p-0.5 md:my-4 mx-auto"
           key={colour}
         >
           <button
