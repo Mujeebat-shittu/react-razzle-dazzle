@@ -30,7 +30,7 @@ function ColourPicker() {
   return (
     <>
       <div
-        className="w-[400px] sm:max-w-[350px] h-[250px] mb-5 rounded-2xl my-4 mx-auto"
+        className="w-[300px] md:w-[400px] h-[250px] mb-5 rounded-2xl my-4 mx-auto"
         style={{
           background: colour,
         }}
@@ -38,7 +38,7 @@ function ColourPicker() {
 
       {colours.map((colour) => (
         <div
-          className="inline-flex sm:grid sm:grid-cols-[minmax(100px, 1fr)] sm:my-3 sm:mx-auto sm:px-3.5 sm:py-[0.3rem]  items-center justify-evenly p-0.5 my-4 mx-auto"
+          className="inline-flex sm:grid sm:grid-cols-[minmax(100px, 1fr)] my-3 sm:px-3.5 sm:py-[0.3rem] items-center justify-evenly p-0.5 md:my-4 mx-auto"
           key={colour}
         >
           <button
