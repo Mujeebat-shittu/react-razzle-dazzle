@@ -13,7 +13,7 @@ const NavBar = function () {
         <div className="relative group flex cursor-pointer ">
           <MenuIcon
             size={40}
-            className="md:static md:mx-auto fixed top-4 right-4 flex items-center justify-center text-white text-[2rem]"
+            className="md:static md:mx-auto fixed top-4 right-8 flex items-center justify-center text-white text-[2rem]"
             onClick={toggleMenu}
           />
 
